@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Login</h2>
+<form method="POST" action="/login">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Login</button>
+</form>
+<p>Don't have an account? <a href="/signup">Sign up</a></p>
+<ul>
+    <li>Must have an upper case letter somewhere.</li>
+    <li>Must have a lower case letter somewhere.</li>
+    <li>Must have a number at the end.</li>
+</ul>
+{% endblock %}
